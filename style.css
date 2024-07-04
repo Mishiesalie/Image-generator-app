@@ -31,3 +31,19 @@ body {
                 inset 16px 16px 29px #ffffff;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+button {
+    font-size: 15px;
+    margin: 20px 0 20px 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100px;
+    border: none;
+    outline: none;
+    box-shadow: 0px 10px 20px -18px;
+}
