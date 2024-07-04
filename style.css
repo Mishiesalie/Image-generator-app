@@ -76,4 +76,7 @@ input {
     outline: 1px solid lightgrey;
   }
 
-  
+  a {
+    text-decoration: none;
+    color: black;
+}
