@@ -81,4 +81,19 @@ input {
     color: black;
 }
 
+.image-card {
+    padding: 10px;
+    text-align: center;
+    height: 300px;
+    width: 400px;
+    border-radius: 0 0 5px 5px;
+    margin: 10px;
+    background: linear-gradient(145deg, #cfcfcf, #f6f6f6);
+    box-shadow: 11px 11px 22px #b1b1b1, -11px -11px 22px #ffffff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
