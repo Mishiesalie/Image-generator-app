@@ -35,3 +35,5 @@ function searchImages(query, page = 1) {
         imageLink.href = result.links.html;
         imageLink.target = "_blank";
 
+        
+
