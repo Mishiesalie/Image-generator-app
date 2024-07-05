@@ -27,7 +27,11 @@ function searchImages(query, page = 1) {
         imageContainer.innerHTML = "";
       }
 
+      data.results.forEach(result => {
+        const imageCard = document.createElement("div");
+        imageCard.className = "image-card";
 
-
-
+        const imageLink = document.createElement("a");
+        imageLink.href = result.links.html;
+        imageLink.target = "_blank";
 
