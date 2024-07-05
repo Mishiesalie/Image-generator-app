@@ -18,6 +18,16 @@ function searchImages(query, page = 1) {
         query: query,
         // per_page: 12,
         page: page,
-    })
+    });
 
-    
+    fetch(`${API_URL}?${params}`, { method: 'GET', headers: headers })
+    .then(response => response.json())
+    .then(data => {
+      if (page === 1) {
+        imageContainer.innerHTML = "";
+      }
+
+
+
+
+
