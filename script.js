@@ -8,3 +8,16 @@ const searchInput = document.getElementById("searchImageInput");
 const generateMore = document.getElementById("generateMore");
 
 let currentPage = 1;
+
+function searchImages(query, page = 1) {
+    const headers = new Headers({
+      'Authorization': `Client-ID ${API_KEY}`
+    });
+
+    const params = new URLSearchParams({
+        query: query,
+        // per_page: 12,
+        page: page,
+    })
+
+    
