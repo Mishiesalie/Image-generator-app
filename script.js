@@ -50,6 +50,11 @@ function searchImages(query, page = 1) {
     .catch(function(error) {
       console.error('Error:', error);
     });
+}
 
-    
+searchButton.addEventListener('click', () =>{
+  generateMore();
+})
+
+
 
