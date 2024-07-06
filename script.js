@@ -53,8 +53,24 @@ function searchImages(query, page = 1) {
 }
 
 searchButton.addEventListener('click', () =>{
-  generateMore();
-})
+  generateMore.style.display = "block"; 
+  currentPage = 1; 
+  const searchTerm = searchInput.value;
+  if (searchTerm) {
+    searchImages(searchTerm, currentPage);
+  }
+});
+
+
+generateMore.addEventListener("click", () => {
+  currentPage++; 
+  const searchTerm = searchInput.value;
+  if (searchTerm) {
+    searchImages(searchTerm, currentPage);
+  }
+});
+
+searchImages("");
 
 
 
