@@ -35,5 +35,21 @@ function searchImages(query, page = 1) {
         imageLink.href = result.links.html;
         imageLink.target = "_blank";
 
-        
+        const imageElement = document.createElement("div");
+        imageElement.className = "image";
+        const img = document.createElement("img");
+        img.src = result.urls.regular;
+        img.alt = result.description || query;
+        imageElement.appendChild(img);
+
+        imageLink.appendChild(imageElement);
+        imageCard.appendChild(imageLink);
+        imageContainer.appendChild(imageCard);
+      });
+    })
+    .catch(function(error) {
+      console.error('Error:', error);
+    });
+
+    
 
